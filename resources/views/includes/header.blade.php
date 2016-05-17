@@ -1,3 +1,16 @@
+{{--header top--}}
+<div class="row header-actions">
+    <div class="col-md-12">
+        <div class="container-fluid">
+            <ul class="list-inline pull-right">
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fa fa-user"></i> Log in</a></li>
+                <li><a href="#"><i class="fa fa-plus"></i> Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{--header nav--}}
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">

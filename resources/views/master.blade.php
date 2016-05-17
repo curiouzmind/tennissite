@@ -4,24 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--  <meta name="_token" content="{!! csrf_token() !!}"/> -->
     <title> @yield('title') | Tennis Site</title>
     <meta name="description" content="@yield('description')" />
     <!-- Stylesheets -->
     @yield('stylesheets')
-    <link rel="stylesheet" href="{{asset ('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset ('css/tennissite.css')}}">
 </head>
 <body>
     <div class="wrapper">
         {{--header--}}
-        @include('includes.header')
+        <header>
+            @include('includes.header')
+        </header>
         {{--Content--}}
-        @yield('content')
+        <main class="content" role="main">
+            @yield('content')
+        </main>
         {{--footer--}}
-        @include('includes.footer')
+        <footer>
+            @include('includes.footer')
+        </footer>
     </div>
 
 <script src="{{asset ('js/app.js')}}"></script>
+<script>
+    function copyright() {
+        var date = new Date();
+        var currentYear = date.getFullYear();
+        var copyInfo = "All Rights Reserved";
+        var companyName = "Tennis Site Inc"
+        document.getElementById('copyright').innerHTML = "&copy;" + currentYear + ", " + companyName + ". " + copyInfo;
+    }
+    $(document).ready(function() {
+        copyright();
+    });
+
+</script>
 @yield('scripts')
 </body>
 </html>

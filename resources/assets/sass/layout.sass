@@ -1,0 +1,54 @@
+//variables
+$page-banner-width: 100%
+$page-banner-height-desktop: 450px
+$page-banner-height-mobile: 350px
+$font-size-base: 14px
+
+//header
+header
+  .header-actions
+    padding: 5px
+    ul
+      margin-bottom: 0
+      li a
+        font-size: $font-size-base - 2
+//page banner
+.content
+  .page-banner
+    height: $page-banner-height-mobile
+    width: $page-banner-width
+    margin: 0
+    padding: 0
+    clear: both
+
+    @media (min-width: 767px)
+      height: $page-banner-height-desktop
+
+//content
+section
+  margin-top: 60px
+  @media (min-width: 767px)
+    //height: 100vh
+
+.newsletter, .adbar
+  margin: 30px 0
+  padding: 30px
+
+//footer
+.footer-partners
+  margin: 30px 0
+  i
+    font-size: 100px
+.footer-socials
+  padding: 30px
+  ul
+    margin-bottom: 0
+  ul li a
+    background-color: #fff
+    padding: 5px
+    border-radius: 5px
+.footer-copyright
+  padding: 5px
+  p, ul
+    margin-bottom: 0
+

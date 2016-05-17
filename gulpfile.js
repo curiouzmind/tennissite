@@ -12,7 +12,11 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss')
+    mix.sass([
+            'app.sass',
+            'layout.sass',
+            'theme.sass'
+        ], 'public/css/tennissite.css')
         .browserify('app.js')
         .browserSync({
             proxy: 'tennissite.local'
