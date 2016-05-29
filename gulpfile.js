@@ -13,7 +13,10 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass([
+            'variables',
             'app.sass',
+            'cards.sass',
+            'helpers.sass',
             'layout.sass',
             'theme.sass'
         ], 'public/css/tennissite.css')
