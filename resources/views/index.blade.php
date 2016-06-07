@@ -3,15 +3,15 @@
 @section('content')
 <div class="row">
     <div class="col-md-12">
-        {{--page banner--}}
+        <!-- page banner -->
         <div class="row">
             <div class="col-md-12 home-banner">
                 <div class="page-banner">
-                    <img src="http://placekitten.com/1600/400" class="img-responsive center-block" alt="Tennis Site HomePage Banner">
+                    <img width="100%" src="{{asset ('img/tennis-banner-min.jpg')}}" class="img-responsive center-block" alt="Tennis Site HomePage Banner">
                 </div>
             </div>
         </div>
-        {{--main content--}}
+        <!-- main content -->
         <div class="row">
             <div class="col-md-12">
                 <div class="container">
