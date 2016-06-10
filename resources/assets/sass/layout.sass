@@ -1,9 +1,4 @@
-//variables
-$page-banner-width: 100%
-$page-banner-height-desktop: 450px
-$page-banner-height-mobile: 350px
-$font-size-base: 14px
-
+@import "variables"
 //header
 header
   .header-actions
@@ -15,40 +10,78 @@ header
 //page banner
 .content
   .page-banner
-    height: $page-banner-height-mobile
+    max-height: $page-banner-height-mobile
     width: $page-banner-width
     margin: 0
     padding: 0
     clear: both
 
     @media (min-width: 767px)
-      height: $page-banner-height-desktop
+      max-height: $page-banner-height-desktop
 
 //content
 section
   margin-top: 60px
-  @media (min-width: 767px)
-    //height: 100vh
+  margin-bottom: 60px
+  .latest-data
+    @media (max-width: 767px)
+      margin-top: 60px
+    .data-box
+      background-color: #333
+      padding: 10px
+      margin-top: 10px
+      .panel-body
+        background-color: $gray-lighter
+        table
+          border: none
+          margin-bottom: 0 !important
+          thead
+            th
+              border: none
+          tfoot
+            td
+              border: none
+    .panel
+      margin-bottom: 0
+    .schedule
+      margin-top: 10px
+      .panel-body
+        p
+          margin-bottom: 0
+          font-weight: 600
+          font-size: 20px
+          span
+            font-weight: 300
 
-.newsletter, .adbar
+.newsletter
   margin: 30px 0
   padding: 30px
+
+.adbar-1, .adbar-2
+  height: 100px
+  width: 100%
+  border-bottom: solid 1px #F5F5F5
+  border-top: solid 1px #F5F5F5
+  overflow: hidden
 
 //footer
-.footer-partners
-  margin: 30px 0
-  i
-    font-size: 100px
-.footer-socials
-  padding: 30px
-  ul
-    margin-bottom: 0
-  ul li a
-    background-color: #fff
+footer
+  margin-top: 60px
+  .footer-partners
+    margin: 30px 0
+    img
+      margin-bottom: 20px
+      border-radius: 2px
+  .footer-socials
+    padding: 30px
+    ul
+      margin-bottom: 0
+    ul li a
+      background-color: #fff
+      padding: 5px
+      border-radius: 5px
+  .footer-copyright
     padding: 5px
-    border-radius: 5px
-.footer-copyright
-  padding: 5px
-  p, ul
-    margin-bottom: 0
+    p, ul
+      margin-bottom: 0
 
