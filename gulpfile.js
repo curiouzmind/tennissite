@@ -1,4 +1,8 @@
 var elixir = require('laravel-elixir');
+var gulp = require('gulp'),
+    php = require('gulp-connect-php'),
+    browserSync = require('browser-sync');
+
 
 /*
  |--------------------------------------------------------------------------
@@ -20,9 +24,20 @@ elixir(function(mix) {
             'layout.sass',
             'theme.sass'
         ], 'public/css/tennissite.css')
-        .browserify('app.js')
-        .browserSync({
-            proxy: 'tennissite.local'
-        });
+        .browserify('app.js');
+});
 
+// gulp tasks
+gulp.task('server-sync', function() {
+    php.server({
+        base: './public'
+    }, function() {
+        browserSync({
+            proxy: '127.0.0.1:8000'
+        });
+    });
+});
+
+gulp.watch('**/*.php').on('change', function() {
+    browserSync.reload();
 });
