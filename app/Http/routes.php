@@ -19,3 +19,6 @@ Route::get('/', 'HomeController@index');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/matches', 'HomeController@matches');
+Route::get('/login', 'HomeController@login');
+Route::get('/register', 'HomeController@register');

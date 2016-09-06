@@ -1,20 +1,6 @@
 <div class="row">
     <div class="col-md-12">
         <div class="text-center">
-            <h3 class="text-uppercase m0-top">Our Partners</h3>
-            {{--partners--}}
-            <div class="container">
-                <div class="row footer-partners">
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                    <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
-                </div>
-            </div>
             {{--socials--}}
             <div class="row footer-socials">
                 <div class="col-md-12">

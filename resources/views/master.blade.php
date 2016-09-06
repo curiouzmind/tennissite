@@ -8,7 +8,7 @@
     <meta name="description" content="@yield('description')" />
     <!-- Stylesheets -->
     @yield('stylesheets')
-    <link rel="stylesheet" href="{{asset ('css/tennissite.css')}}">
+    <link rel="stylesheet" href="{{asset ('css/tennissite.min.css')}}">
 </head>
 <body>
     <div class="wrapper">
@@ -26,7 +26,7 @@
         </footer>
     </div>
 
-<script src="{{asset ('js/app.js')}}"></script>
+<script src="{{asset ('js/app.min.js')}}"></script>
 <script>
     function copyright(companyName) {
         var date = new Date();

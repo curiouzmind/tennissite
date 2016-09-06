@@ -6,8 +6,8 @@
         <!-- page banner -->
         <div class="row">
             <div class="col-md-12 home-banner">
-                <div class="page-banner">
-                    <img width="100%" src="{{asset ('img/tennis-banner-min.jpg')}}" class="img-responsive center-block" alt="Tennis Site HomePage Banner">
+                <div class="intro-message">
+                    <h1 class="text-right hidden">Welcome to Tennis Tour</h1>
                 </div>
             </div>
         </div>
@@ -379,6 +379,20 @@
                         <div class="adbar-2">
                             <img src="http://placehold.it/1600x120/ffffff/333333/?text=Advertisement" class="img-responsive center-block" alt="Advert banner 2">
                         </div>
+                    </div>
+                </div>
+                {{--partners--}}
+                <div class="container">
+                    <h3 class="text-uppercase m0-top m20-down text-center">Our Partners</h3>
+                    <div class="row footer-partners">
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
+                        <div class="col-md-3 col-sm-4 col-xs-4"><img class="img-responsive" src="http://placekitten.com/400/250"></div>
                     </div>
                 </div>
             </div>
