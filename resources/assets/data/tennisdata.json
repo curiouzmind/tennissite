@@ -44,7 +44,7 @@
 		   "stage":"Group stages"
 		}
 	],
-"rnd1": 
+"round1":
 	[
 		{
 		   "player":"bolaji rebel",
@@ -55,83 +55,35 @@
 		},
 		{
 		   "player":"bolaji rebel2",
-		   "country":"nigeria",
-		   "location":"abuja",
-		   "tournament":"interstate championships",
-		   "stage":"Group stages"
-		}
-	],
-"rnd2": 
-	[
-		{
-		   "player":"bolaji rebel11",
-		   "country":"nigeria",
-		   "location":"abuja",
-		   "tournament":"interstate championships",
-		   "stage":"Group stages"
-		},
-		{
-		   "player":"bolaji rebel12",
-		   "country":"nigeria",
-		   "location":"abuja",
-		   "tournament":"interstate championships",
-		   "stage":"Group stages"
-		},
-		{
-		   "player":"bolaji rebel",
-		   "country":"nigeria",
+		   "country":"uk",
 		   "location":"abuja",
 		   "tournament":"interstate championships",
 		   "stage":"Group stages"
 		},
 		{
 		   "player":"bolaji rebel2",
-		   "country":"nigeria",
-		   "location":"abuja",
-		   "tournament":"interstate championships",
-		   "stage":"Group stages"
-		},
-		{
-		   "player":"bolaji rebel",
-		   "country":"nigeria",
+		   "country":"usa",
 		   "location":"abuja",
 		   "tournament":"interstate championships",
 		   "stage":"Group stages"
 		},
 		{
 		   "player":"bolaji rebel2",
-		   "country":"nigeria",
-		   "location":"abuja",
-		   "tournament":"interstate championships",
-		   "stage":"Group stages"
-		}
-	],
-"rnd3": 
-	[
-		{
-		   "player":"bolaji rebel11",
-		   "country":"nigeria",
-		   "location":"abuja",
-		   "tournament":"interstate championships",
-		   "stage":"Group stages"
-		},
-		{
-		   "player":"bolaji rebel12",
-		   "country":"nigeria",
-		   "location":"abuja",
-		   "tournament":"interstate championships",
-		   "stage":"Group stages"
-		},
-		{
-		   "player":"bolaji rebel",
-		   "country":"nigeria",
+		   "country":"netherlands",
 		   "location":"abuja",
 		   "tournament":"interstate championships",
 		   "stage":"Group stages"
 		},
 		{
 		   "player":"bolaji rebel2",
-		   "country":"nigeria",
+		   "country":"france",
+		   "location":"abuja",
+		   "tournament":"interstate championships",
+		   "stage":"Group stages"
+		},
+		{
+		   "player":"bolaji rebel2",
+		   "country":"italy",
 		   "location":"abuja",
 		   "tournament":"interstate championships",
 		   "stage":"Group stages"

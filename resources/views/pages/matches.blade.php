@@ -44,7 +44,7 @@
             			<li class="btn btn-default "> Apply filter</li>
             		</ul>
             		<!-- content -->
-            		<div id="scores"><!-- Default panel contents --></div>
+            		<div id="scores" class="scores"><!-- Default panel contents --></div>
 	            </div>
 	            <div role="tabpanel" class="tab-pane active" id="profile">
 	            	<!-- filters -->
@@ -57,21 +57,59 @@
             					<option>Women's Doubles</option>
             				</select>
         				</li>
-        				<li>
-            				<select class="text-uppercase">
-            					<option>Round 1</option>
-            					<option>Round 2</option>
-            					<option>Round 3</option>
-            					<option>Round 4</option>
-            					<option>QuarterFinals</option>
-            					<option>SemiFinals</option>
-            					<option>Finals</option>
-            				</select>
-            			</li>
             			<li class="btn btn-default"> Apply filter</li>
             		</ul>
-            		<!-- content -->
-	            	<div id="draws"></div>
+            		<div class="row">
+            			<div class="col-md-12">
+            				<ul class="nav nav-tabs nav-justified" role="tablist">
+					            <li role="presentation" class="active"><a href="#r1" aria-controls="r1" role="tab" data-toggle="tab">Round 1</a></li>
+					            <li role="presentation"><a href="#r2" aria-controls="r2" role="tab" data-toggle="tab">Round 2</a></li>
+					            <li role="presentation"><a href="#r3" aria-controls="r3" role="tab" data-toggle="tab">Round 3</a></li>
+					            <li role="presentation"><a href="#r4" aria-controls="r4" role="tab" data-toggle="tab">Round 4</a></li>
+					            <li role="presentation"><a href="#qf" aria-controls="qf" role="tab" data-toggle="tab">QuarterFinals</a></li>
+					            <li role="presentation"><a href="#sf" aria-controls="sf" role="tab" data-toggle="tab">SemiFinals</a></li>
+					            <li role="presentation"><a href="#final" aria-controls="final" role="tab" data-toggle="tab">Finals</a></li>
+					        </ul>
+					        <!-- Tab panes -->
+					        <div class="tab-content">
+					        	<!-- round 1 -->
+					            <div role="tabpanel" class="tab-pane fade active" id="r1">
+					            	<!-- content -->
+	            					<div id="round1" class="scores"></div>
+            					</div>
+            					<!-- round 2 -->
+					            <div role="tabpanel" class="tab-pane fade" id="r2">
+					            	<!-- content -->
+	            					<div id="round2" class="scores"></div>
+            					</div>
+            					<!-- round 3 -->
+					            <div role="tabpanel" class="tab-pane fade" id="r3">
+					            	<!-- content -->
+	            					<div id="round3" class="scores"></div>
+            					</div>
+            					<!-- round 4 -->
+					            <div role="tabpanel" class="tab-pane fade" id="r4">
+					            	<!-- content -->
+	            					<div id="round4" class="scores"></div>
+            					</div>
+            					<!-- q finals -->
+					            <div role="tabpanel" class="tab-pane fade" id="qf">
+					            	<!-- content -->
+	            					<div id="qfinals" class="scores"></div>
+            					</div>
+            					<!-- s finals -->
+					            <div role="tabpanel" class="tab-pane fade" id="sf">
+					            	<!-- content -->
+	            					<div id="sfinals" class="scores"></div>
+            					</div>
+            					<!-- finals -->
+					            <div role="tabpanel" class="tab-pane fade" id="final">
+					            	<!-- content -->
+	            					<div id="finals" class="scores"></div>
+            					</div>
+        					</div>
+            			</div>
+            		</div>
 	            </div>
 	            <div role="tabpanel" class="tab-pane fade" id="messages">Lorem Ipsum is simply dummy text of the printing.</div>
 	        </div>
@@ -90,23 +128,21 @@
 		xmlhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				var myData = JSON.parse(this.responseText);
-				myFunction(myData);
+				tScores(myData);
+				tDraws(myData);
 			}
 		};
 		xmlhttp.open("GET", src, true);
 		xmlhttp.send();
 
-		function myFunction(arr) {
-			var draws = "";
-			var scores = "";
-			var i;
-			for(i = 0; i < arr.length; i++) {
-				draws += arr[i].player + " " + arr[i].country + '<br>';
-				scores += 	'<div class="panel panel-primary">' +
+		function tDraws(arr) {
+			var round1 = "";
+			for(i = 0; i < arr.rnd1.length; i++) {
+				round1 += 	'<div class="panel panel-primary">' +
 							'<div class="panel-heading text-uppercase">' 
-								+ '<span>' + arr[i].location + '</span>' + '&nbsp;' + " > " + '&nbsp;' + 
-								'<span>' + arr[i].tournament + '</span>' + '&nbsp;' + " > " + '&nbsp;' + '<span>' 
-								+ arr[i].stage + '</span>' + 
+								+ '<span>' + arr.rnd1[i].location + '</span>' + '&nbsp;' + " > " + '&nbsp;' + 
+								'<span>' + arr.rnd1[i].tournament + '</span>' + '&nbsp;' + " > " + '&nbsp;' + '<span>' 
+								+ arr.rnd1[i].stage + '</span>' + 
 							'</div>' +
 							'<div class="panel-body text-capitalize">' 
 							+ 	'<table class="table table-bordered m0-down">'
@@ -114,15 +150,49 @@
 									'</th>' + '<th>' + 3 + '</th>' + '<th>' + 4 + '</th>' + '<th>' + 5 + '</th>' + '</tr>' + '</thead>' + 
 									'<tfoot>' + '<tr>' + '<td>' + '<button class="btn btn-primary">' + 'view stats' + '</button>' + '</td>' + '</tr>' + '</tfoot>' + 
 									'<tbody>' +
-										'<tr>' + '<td>' + arr[i].player + ' ' + '(' + arr[i].country + ')' + '<span class="pull-right">' + '<i class="fa fa-check"></i>' + '</span>' + '</td>' + '<td></td>' + '<td>' + 6 + '</td>' + '<td>' + 7 + '</td>' + '<td>' + 3 + '</td>' + '<td>' + 6 + '</td>' + '<td>' + '</td>' + '</tr>'+
-										'<tr>' + '<td>' + arr[i].player + ' ' + '(' + arr[i].country + ')' + '<span class="pull-right">' + '<i class="fa fa-check"></i>' + '</span>' + '</td>' + '<td></td>' + '<td>' + 6 + '</td>' + '<td>' + 7 + '</td>' + '<td>' + 3 + '</td>' + '<td>' + 6 + '</td>' + '<td>' + '</td>' + '</tr>' + '</tbody>'
+										'<tr>' + '<td>' + arr.rnd1[i].player + ' ' + '(' + arr.rnd1[i].country + ')' + '<span class="pull-right">' + '<i class="fa fa-check"></i>' + '</span>' + '</td>' + '<td></td>' + '<td>' + 6 + '</td>' + '<td>' + 7 + '</td>' + '<td>' + 3 + '</td>' + '<td>' + 6 + '</td>' + '<td>' + '</td>' + '</tr>'+
+										'<tr>' + '<td>' + arr.rnd1[i].player + ' ' + '(' + arr.rnd1[i].country + ')' + '<span class="pull-right">' + '<i class="fa fa-check"></i>' + '</span>' + '</td>' + '<td></td>' + '<td>' + 6 + '</td>' + '<td>' + 7 + '</td>' + '<td>' + 3 + '</td>' + '<td>' + 6 + '</td>' + '<td>' + '</td>' + '</tr>' + '</tbody>'
 							+	'</table>' + 
 							'</div>' +
 							'</div>';
 			}
-			document.getElementById("draws").innerHTML = draws;
+			console.log(arr.rnd1[1].player);
+			document.getElementById("round1").innerHTML = round1;
+			document.getElementById("round2").innerHTML = round1;
+			document.getElementById("round3").innerHTML = round1;
+			document.getElementById("round4").innerHTML = round1;
+			document.getElementById("qfinals").innerHTML = round1;
+			document.getElementById("sfinals").innerHTML = round1;
+			document.getElementById("finals").innerHTML = round1;
+		}
+		function tScores(arr) {
+			var draws = "";
+			var scores = "";
+			var round1 = "";
+			var i,j,k;
+			for(i = 0; i < arr.score.length; i++) {
+				draws += arr.score[i].player + " " + arr.score[i].country + '<br>';
+				scores += 	'<div class="panel panel-primary">' +
+							'<div class="panel-heading text-uppercase">' 
+								+ '<span>' + arr.score[i].location + '</span>' + '&nbsp;' + " > " + '&nbsp;' + 
+								'<span>' + arr.score[i].tournament + '</span>' + '&nbsp;' + " > " + '&nbsp;' + '<span>' 
+								+ arr.score[i].stage + '</span>' + 
+							'</div>' +
+							'<div class="panel-body text-capitalize">' 
+							+ 	'<table class="table table-bordered m0-down">'
+								+	'<thead>' + '<tr>' + '<th>' + ' ' + '</th>' + '<th>' + 'Pts' + '</th>' + '<th>' + '1' + '</th>' + '<th>' + '2' +
+									'</th>' + '<th>' + 3 + '</th>' + '<th>' + 4 + '</th>' + '<th>' + 5 + '</th>' + '</tr>' + '</thead>' + 
+									'<tfoot>' + '<tr>' + '<td>' + '<button class="btn btn-primary">' + 'view stats' + '</button>' + '</td>' + '</tr>' + '</tfoot>' + 
+									'<tbody>' +
+										'<tr>' + '<td>' + arr.score[i].player + ' ' + '(' + arr.score[i].country + ')' + '<span class="pull-right">' + '<i class="fa fa-check"></i>' + '</span>' + '</td>' + '<td></td>' + '<td>' + 6 + '</td>' + '<td>' + 7 + '</td>' + '<td>' + 3 + '</td>' + '<td>' + 6 + '</td>' + '<td>' + '</td>' + '</tr>'+
+										'<tr>' + '<td>' + arr.score[i].player + ' ' + '(' + arr.score[i].country + ')' + '<span class="pull-right">' + '<i class="fa fa-check"></i>' + '</span>' + '</td>' + '<td></td>' + '<td>' + 6 + '</td>' + '<td>' + 7 + '</td>' + '<td>' + 3 + '</td>' + '<td>' + 6 + '</td>' + '<td>' + '</td>' + '</tr>' + '</tbody>'
+							+	'</table>' + 
+							'</div>' +
+							'</div>';
+			}
+			
+			console.log(arr.score[2].player);
 			document.getElementById("scores").innerHTML = scores;
-			// document.getElementById("scores").innerHTML = scores;
 		}
 	</script>
 @endsection
