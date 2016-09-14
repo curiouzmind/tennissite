@@ -23,14 +23,14 @@
 		<div class="col-md-8 content">
 			<!-- tabs -->
 			<ul class="nav nav-tabs" role="tablist">
-	            <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Scores & Stats</a></li>
-	            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Draws</a></li>
-	            <li role="presentation" class="active"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Schedules</a></li>
+	            <li role="presentation" class="active"><a href="#scores" aria-controls="scores" role="tab" data-toggle="tab">Scores & Stats</a></li>
+	            <li role="presentation"><a href="#draws" aria-controls="draws" role="tab" data-toggle="tab">Draws</a></li>
+	            <li role="presentation"><a href="#schedule" aria-controls="schedule" role="tab" data-toggle="tab">Schedules</a></li>
 	        </ul>
 	        <!-- Tab panes -->
 	        <div class="tab-content">
 	        	<!-- scores & stats -->
-	            <div role="tabpanel" class="tab-pane fade" id="home">
+	            <div role="tabpanel" class="tab-pane fade active in" id="scores">
 	            	<!-- filters -->
             		<ul class="list-inline">
             			<li>
@@ -46,7 +46,7 @@
             		<!-- content -->
             		<div id="scores" class="scores"><!-- Default panel contents --></div>
 	            </div>
-	            <div role="tabpanel" class="tab-pane fade" id="profile">
+	            <div role="tabpanel" class="tab-pane fade" id="draws">
 	            	<!-- filters -->
             		<ul class="list-inline">
             			<li>
@@ -73,7 +73,7 @@
 					        <!-- Tab panes -->
 					        <div class="tab-content">
 					        	<!-- round 1 -->
-					            <div role="tabpanel" class="tab-pane fade" id="r1">
+					            <div role="tabpanel" class="tab-pane fade active in" id="r1">
 					            	<!-- content -->
 	            					<div id="round1" class="scores"></div>
             					</div>
@@ -111,7 +111,19 @@
             			</div>
             		</div>
 	            </div>
-	            <div role="tabpanel" class="tab-pane fade active" id="messages">
+	            <div role="tabpanel" class="tab-pane fade" id="schedule">
+	            	<!-- filters -->
+            		<ul class="list-inline">
+            			<li>
+            				<select class="text-uppercase">
+            					<option>Day 1: Sunday, 22 May</option>
+            					<option>Day 2: Sunday, 22 May</option>
+            					<option>Day 3: Sunday, 22 May</option>
+            					<option>Day 4: Sunday, 22 May</option>
+            				</select>
+        				</li>
+        				<li class="btn btn-default"> Apply filter</li>
+            		</ul>
 	            	<div class="court media">
                         <a class="pull-left courtName" href="#">
                             <span>Center Court</span><br>
