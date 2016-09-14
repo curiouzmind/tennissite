@@ -1,0 +1,36 @@
+@import "variables"
+
+.court
+	border: solid 1px #ddd
+	display: table
+	.courtName
+	    color: inherit
+        float: left
+	    width: 100%
+	    padding: 22% 0
+	    text-align: center
+	    text-transform: uppercase
+	    font-weight: bold
+    	@media (min-width: 767px)
+    		float: none !important
+		    display: table-cell
+		    width: 20%
+		    height: auto !important
+	.match
+		.panel-body
+			div
+				display: inline-block
+			.names
+				width: 37%
+				a
+					color: inherit
+					text-transform: capitalize
+				.country
+					text-transform: uppercase
+			.versus
+				width: 10%
+				margin-right: 10px
+				font-style: italic
+				text-transform: lowercase
+			.matchScore
+				width: 10%

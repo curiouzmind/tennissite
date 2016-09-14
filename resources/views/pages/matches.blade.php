@@ -24,8 +24,8 @@
 			<!-- tabs -->
 			<ul class="nav nav-tabs" role="tablist">
 	            <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Scores & Stats</a></li>
-	            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Draws</a></li>
-	            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Schedules</a></li>
+	            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Draws</a></li>
+	            <li role="presentation" class="active"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Schedules</a></li>
 	        </ul>
 	        <!-- Tab panes -->
 	        <div class="tab-content">
@@ -46,7 +46,7 @@
             		<!-- content -->
             		<div id="scores" class="scores"><!-- Default panel contents --></div>
 	            </div>
-	            <div role="tabpanel" class="tab-pane active" id="profile">
+	            <div role="tabpanel" class="tab-pane fade" id="profile">
 	            	<!-- filters -->
             		<ul class="list-inline">
             			<li>
@@ -73,7 +73,7 @@
 					        <!-- Tab panes -->
 					        <div class="tab-content">
 					        	<!-- round 1 -->
-					            <div role="tabpanel" class="tab-pane fade active" id="r1">
+					            <div role="tabpanel" class="tab-pane fade" id="r1">
 					            	<!-- content -->
 	            					<div id="round1" class="scores"></div>
             					</div>
@@ -111,10 +111,161 @@
             			</div>
             		</div>
 	            </div>
-	            <div role="tabpanel" class="tab-pane fade" id="messages">Lorem Ipsum is simply dummy text of the printing.</div>
+	            <div role="tabpanel" class="tab-pane fade active" id="messages">
+	            	<div class="court media">
+                        <a class="pull-left courtName" href="#">
+                            <span>Center Court</span><br>
+                            <span>1:00 pm</span>
+                        </a>
+                        <div class="media-body matches">
+                            <div class="panel panel-primary match">
+                            	<div class="panel-heading text-uppercase">
+                            		<span class="text-left">
+                            			men's singles - first round
+                            		</span>
+                            		<span class="pull-right">
+                            			6-4 &nbsp; 6-3 &nbsp; 7-5
+                            		</span>
+                            	</div>
+                            	<div class="panel-body">
+                            		<div class="names">
+                            			<a href="#">Player 1</a>
+                            			<span class="country">(ngn)</span>
+                            		</div>
+                            		<div class="versus text-capitalize">Defeated</div>
+                            		<div class="names">
+                            			<a href="#">Player 2</a>
+                            			<span class="country">(gbr)</span>
+                            		</div>
+                            		<div class="matchScore">Completed</div>
+                            	</div>
+                            </div>
+                            <div class="panel panel-primary match">
+                            	<div class="panel-heading text-uppercase">
+                            		<span class="text-left">
+                            			ladies' singles - first round
+                            		</span>
+                            		<span class="pull-right">
+                            			6-4 &nbsp; 6-3 &nbsp; 7-5
+                            		</span>
+                            	</div>
+                            	<div class="panel-body">
+                            		<div class="names">
+                            			<a href="#">Player 1</a>
+                            			<span class="country">(usa)</span>
+                            		</div>
+                            		<div class="versus text-capitalize">Defeated</div>
+                            		<div class="names">
+                            			<a href="#">Player 2</a>
+                            			<span class="country">(jpn)</span>
+                            		</div>
+                            		<div class="matchScore">Completed</div>
+                            	</div>
+                            </div>
+                            <div class="panel panel-primary match">
+                            	<div class="panel-heading text-uppercase">
+                            		<span class="text-left">
+                            			men's singles - first round
+                            		</span>
+                            		<span class="pull-right">
+                            			6-4 &nbsp; 6-3 &nbsp; 7-5
+                            		</span>
+                            	</div>
+                            	<div class="panel-body">
+                            		<div class="names">
+                            			<a href="#">Player 3</a>
+                            			<span class="country">(sbr)</span>
+                            		</div>
+                            		<div class="versus text-capitalize">Defeated</div>
+                            		<div class="names">
+                            			<a href="#">Player 4</a>
+                            			<span class="country">(fra)</span>
+                            		</div>
+                            		<div class="matchScore">Completed</div>
+                            	</div>
+                            </div>
+                        </div>
+                	</div>
+                	<div class="court media">
+                        <a class="pull-left courtName" href="#">
+                            <span>Left-wing Court</span><br>
+                            <span>4:00 pm</span>
+                        </a>
+                        <div class="media-body matches">
+                            <div class="panel panel-primary match">
+                            	<div class="panel-heading text-uppercase">
+                            		<span class="text-left">
+                            			men's singles - first round
+                            		</span>
+                            		<span class="pull-right">
+                            			6-4 &nbsp; 6-3 &nbsp; 7-5
+                            		</span>
+                            	</div>
+                            	<div class="panel-body">
+                            		<div class="names">
+                            			<a href="#">Player 5</a>
+                            			<span class="country">(bra)</span>
+                            		</div>
+                            		<div class="versus text-capitalize">Defeated</div>
+                            		<div class="names">
+                            			<a href="#">Player 6</a>
+                            			<span class="country">(ita)</span>
+                            		</div>
+                            		<div class="matchScore">Completed</div>
+                            	</div>
+                            </div>
+                            <div class="panel panel-primary match">
+                            	<div class="panel-heading text-uppercase">
+                            		<span class="text-left">
+                            			ladies' singles - first round
+                            		</span>
+                            		<span class="pull-right">
+                            			6-4 &nbsp; 6-3 &nbsp; 7-5
+                            		</span>
+                            	</div>
+                            	<div class="panel-body">
+                            		<div class="names">
+                            			<a href="#">Player 1</a>
+                            			<span class="country">(usa)</span>
+                            		</div>
+                            		<div class="versus text-capitalize">Defeated</div>
+                            		<div class="names">
+                            			<a href="#">Player 2</a>
+                            			<span class="country">(jpn)</span>
+                            		</div>
+                            		<div class="matchScore">Completed</div>
+                            	</div>
+                            </div>
+                            <div class="panel panel-primary match">
+                            	<div class="panel-heading text-uppercase">
+                            		<span class="text-left">
+                            			men's singles - first round
+                            		</span>
+                            		<span class="pull-right">
+                            			6-4 &nbsp; 6-3 &nbsp; 7-5
+                            		</span>
+                            	</div>
+                            	<div class="panel-body">
+                            		<div class="names">
+                            			<a href="#">Player 3</a>
+                            			<span class="country">(sbr)</span>
+                            		</div>
+                            		<div class="versus text-capitalize">Defeated</div>
+                            		<div class="names">
+                            			<a href="#">Player 4</a>
+                            			<span class="country">(fra)</span>
+                            		</div>
+                            		<div class="matchScore">Completed</div>
+                            	</div>
+                            </div>
+                        </div>
+                	</div>
+	            </div>
 	        </div>
 		</div>
-		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			
+		</div>
 	</div>
 </div>
 @endsection
