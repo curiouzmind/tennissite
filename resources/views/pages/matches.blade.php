@@ -20,7 +20,7 @@
 <!-- main content -->
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-8 content">
 			<!-- tabs -->
 			<ul class="nav nav-tabs" role="tablist">
 	            <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Scores & Stats</a></li>
@@ -263,8 +263,10 @@
 	            </div>
 	        </div>
 		</div>
-		<div class="col-md-4">
-			
+		<div class="col-md-4 sidebar">
+			<span class="placeholder">
+				sidebar
+			</span>
 		</div>
 	</div>
 </div>
