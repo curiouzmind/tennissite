@@ -38,7 +38,7 @@ class HomeController extends Controller
     {
         return view('pages.matches');
     }
-    public function matches()
+    public function singleMatch()
     {
         return view('pages.single-match');
     }

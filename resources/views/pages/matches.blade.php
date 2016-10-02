@@ -13,7 +13,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<div class="breadcrumb">
-			<i class="fa fa-home"></i>&nbsp; > &nbsp;<span>Matches</span>
+			<a href="#"><i class="fa fa-home"></i></a>&nbsp; > &nbsp;<span>Matches</span>
 		</div>
 	</div>
 </div>
