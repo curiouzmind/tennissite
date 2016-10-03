@@ -28,23 +28,101 @@
                             <span>abuja</span><span>interstate championships</span><span>Round 2</span>
                         </div>
                         <div class="panel-body">
-                            <table class="table table-bordered">
+                            <div class="row">
+                                <div class="col-md-2"><i class="fa fa-user"></i></div>
+                                <div class="col-md-8">
+                                    <table class="table table-bordered text-center">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Winner</th>
+                                                <th>1</th>
+                                                <th>2</th>
+                                                <th>3</th>
+                                                <th>4</th>
+                                                <th>5</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="p1-scores"></tr>
+                                            <tr id="p2-scores"></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2"><i class="fa fa-user"></i></div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered table-responsive">
                                 <thead>
-                                    <tr>
+                                    <tr class="text-center">
                                         <th></th>
-                                        <th>1</th>
-                                        <th>2</th>
-                                        <th>3</th>
-                                        <th>4</th>
-                                        <th>5</th>
+                                        <th>Player 1</th>
+                                        <th>Player 2</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr id="p1-scores">
-
-                                        <!-- <td class="p1-scores"></td> -->
+                                <tbody class="text-uppercase">
+                                    <tr>
+                                        <td>Aces</td>
+                                        <td>4</td>
+                                        <td>5</td>
                                     </tr>
-                                    <tr id="p2-scores"></tr>
+                                    <tr>
+                                        <td>Double Faults</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>First Serve % In</td>
+                                        <td>73/114</td>
+                                        <td>69/103</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Win % on first serve</td>
+                                        <td>49/73</td>
+                                        <td>60/69</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Win % on second serve</td>
+                                        <td>29/41</td>
+                                        <td>19/34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Net points won</td>
+                                        <td>46/74</td>
+                                        <td>17/22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>break points won</td>
+                                        <td>0/2</td>
+                                        <td>1/7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>receiving points won</td>
+                                        <td>24/103</td>
+                                        <td>36/114</td>
+                                    </tr>
+                                    <tr>
+                                        <td>winners</td>
+                                        <td>39</td>
+                                        <td>39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>unforced errors</td>
+                                        <td>29</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total points won</td>
+                                        <td>102</td>
+                                        <td>115</td>
+                                    </tr>
+                                    <tr>
+                                        <td>distance covered (m)</td>
+                                        <td>2430.3</td>
+                                        <td>2367.9</td>
+                                    </tr>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -70,8 +148,8 @@
 	<!-- json data -->
     <script type="text/javascript">
         var playerScores = {
-            "player1": ["Player 1",6,5,6,6,""],
-            "player2": ["Player 2",4,7,4,4,""]
+            "player1": ["Player 1", "<i class='fa fa-check'></i>",6,5,6,6,""],
+            "player2": ["Player 2", " ",4,7,4,4,""]
         }
         var p1 = "";
         var p2 = "";
