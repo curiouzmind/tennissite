@@ -309,8 +309,8 @@
 								'<span>' + arr.rnd1[i].tournament + '</span>' + '&nbsp;' + " > " + '&nbsp;' + '<span>' 
 								+ arr.rnd1[i].stage + '</span>' + 
 							'</div>' +
-							'<div class="panel-body text-capitalize">' 
-							+ 	'<table class="table table-bordered m0-down">'
+							'<div class="panel-body text-capitalize table-responsive">' 
+							+ 	'<table class="table table-striped m0-down">'
 								+	'<thead>' + '<tr>' + '<th>' + ' ' + '</th>' + '<th>' + 'Pts' + '</th>' + '<th>' + '1' + '</th>' + '<th>' + '2' +
 									'</th>' + '<th>' + 3 + '</th>' + '<th>' + 4 + '</th>' + '<th>' + 5 + '</th>' + '</tr>' + '</thead>' + 
 									'<tfoot>' + '<tr>' + '<td>' + '<button class="btn btn-primary">' + 'view stats' + '</button>' + '</td>' + '</tr>' + '</tfoot>' + 
@@ -344,7 +344,7 @@
 								+ arr.score[i].stage + '</span>' + 
 							'</div>' +
 							'<div class="panel-body text-capitalize">' 
-							+ 	'<table class="table table-bordered m0-down">'
+							+ 	'<table class="table table-striped m0-down">'
 								+	'<thead>' + '<tr>' + '<th>' + ' ' + '</th>' + '<th>' + 'Pts' + '</th>' + '<th>' + '1' + '</th>' + '<th>' + '2' +
 									'</th>' + '<th>' + 3 + '</th>' + '<th>' + 4 + '</th>' + '<th>' + 5 + '</th>' + '</tr>' + '</thead>' + 
 									'<tfoot>' + '<tr>' + '<td>' + '<button class="btn btn-primary">' + 'view stats' + '</button>' + '</td>' + '</tr>' + '</tfoot>' + 

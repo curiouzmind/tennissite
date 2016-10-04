@@ -136,6 +136,8 @@
             </div>
 		</div>
 		<div class="col-md-4 sidebar">
+            <div id="player1"></div>
+            <div id="player2"></div>
 			<span class="placeholder">
 				sidebar
 			</span>
@@ -164,7 +166,24 @@
             p2 += "<td>" + playerScores.player2[set2] + "</td>";
         }
         document.getElementById("p1-scores").innerHTML = p1;
-        document.getElementById("p2-scores").innerHTML = p2;
-        
+        document.getElementById("p2-scores").innerHTML = p2;        
+    </script>
+    <script>
+        function Player(firstName, lastName, profilePic){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.profilePic = profilePic;
+        }
+
+        Player.prototype.showPlayerName = function() {
+            return this.firstName + " " + this.lastName;
+        }
+        var player1 = new Player("Raphael", "Nadal");
+        var player2 = new Player("Andy", "Murray");
+
+        var p1 = player1.showPlayerName();
+        var p2 = player2.showPlayerName();
+        document.getElementById("player1").innerHTML = p1;
+        document.getElementById("player2").innerHTML = p2;
     </script>
 @endsection

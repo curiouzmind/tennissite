@@ -42,4 +42,8 @@ class HomeController extends Controller
     {
         return view('pages.single-match');
     }
+    public function player()
+    {
+        return view('pages.player');
+    }
 }
