@@ -42,8 +42,12 @@ class HomeController extends Controller
     {
         return view('pages.single-match');
     }
-    public function player()
+    public function players()
     {
-        return view('pages.player');
+        return view('pages.players');
+    }
+    public function singlePlayer()
+    {
+        return view('pages.single-player');
     }
 }

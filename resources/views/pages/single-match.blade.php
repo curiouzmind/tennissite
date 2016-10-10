@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="overlay">
-            <h1 class="text-center text-capitalize">Match Statistics</h1>
+            <h1>Match Statistics</h1>
         </div>
     </div>
 </div>

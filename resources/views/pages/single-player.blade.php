@@ -7,7 +7,7 @@
         <div class="overlay">
             <div class="profile-pic">
                 <img class="img-responsive img-circle center-block" src="{{asset('img/player-pics/andyMurray.gif')}}" alt="Player Image">
-                <h1 class="text-center text-capitalize player1">Andy Murray</h1>
+                <h1 class="player1">Andy Murray</h1>
             </div>
         </div>
     </div>
@@ -31,8 +31,20 @@
                             <span>Profile Summary</span>
                         </div>
                         <div class="panel-body">
-                            <div class="row">
-                                
+                            <div class="row player-summary">
+                                <div class="col-md-6">
+                                    <p><span>Country:</span>United Kingdom</p>
+                                    <p><span>Birth Date:</span>15 May 1987</p>
+                                    <p><span>Birth Place:</span> Glascow, Scotland</p>
+                                    <p><span>Residence:</span>London, England</p>
+                                    <p><span>Plays:</span>Right Hand</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><span>Height:</span>1.91 Metre</p>
+                                    <p><span>Weigth:</span>84.1 Kilos</p>
+                                    <p><span>Singles Ranking:</span>2</p>
+                                    <p><span>Doubles Ranking:</span>145</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -44,7 +56,7 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active in table-responsive" id="profile">
-                            <table class="table table-striped table-responsive">
+                            <table class="table table-striped">
                                 <caption class="text-uppercase">Overview</caption>
                                 <tbody class="text-uppercase">
                                     <tr>
