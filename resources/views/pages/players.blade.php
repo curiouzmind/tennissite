@@ -18,7 +18,7 @@
 	</div>
 </div>
 <!-- main content -->
-<div class="container" data-spy="scroll" data-target="#myScrollspy">
+<div class="container">
 	<div class="row">
 		<div class="col-md-8 content players" id="myScrollspy">
 			<!-- tabs -->
@@ -29,7 +29,16 @@
             <!-- Tab panes -->
             <div class="tab-content players-list">
                 <div role="tabpanel" class="tab-pane fade active in table-responsive" id="men">
-                    <span class="player-nav" data-spy="affix" data-offset-top="0"><a href="#ma">a</a><a href="#mb">b</a><a href="#mc">c</a><a href="#md">d</a><a href="#me">e</a></span>
+                    <div class="well player-nav">
+                        <span>
+                            <a href="#ma">a</a><a href="#mb">b</a><a href="#mc">c</a><a href="#md">d</a><a href="#me">e</a>
+                            <a href="#mf">f</a><a href="#mg">g</a><a href="#mh">h</a><a href="#mi">i</a><a href="#mj">j</a>
+                            <a href="#mk">k</a><a href="#ml">l</a><a href="#mm">m</a><a href="#mn">n</a><a href="#mo">o</a>
+                            <a href="#mp">p</a><a href="#mq">q</a><a href="#mr">r</a><a href="#ms">s</a><a href="#mt">t</a>
+                            <a href="#mu">u</a><a href="#mv">v</a><a href="#mw">w</a><a href="#mx">x</a><a href="#my">y</a>
+                            <a href="#mz">z</a>
+                        </span>
+                    </div>
                     <table id="ma" class="table table-striped">
                         <caption>A</caption>
                         <tbody class="players-list-men">
@@ -82,6 +91,16 @@
                     </table>
                 </div>
                 <div role="tabpanel" class="tab-pane fade table-responsive" id="women">
+                    <div class="well player-nav">
+                        <span>
+                            <a href="#wa">a</a><a href="#wb">b</a><a href="#wc">c</a><a href="#wd">d</a><a href="#we">e</a>
+                            <a href="#wf">f</a><a href="#wg">g</a><a href="#wh">h</a><a href="#wi">i</a><a href="#wj">j</a>
+                            <a href="#wk">k</a><a href="#wl">l</a><a href="#wm">w</a><a href="#wn">n</a><a href="#wo">o</a>
+                            <a href="#wp">p</a><a href="#wq">q</a><a href="#wr">r</a><a href="#ws">s</a><a href="#wt">t</a>
+                            <a href="#wu">u</a><a href="#wv">v</a><a href="#ww">w</a><a href="#wx">x</a><a href="#wy">y</a>
+                            <a href="#wz">z</a>
+                        </span>
+                    </div>
                     <table id="wa" class="table table-striped">
                         <caption>A</caption>
                         <tbody class="players-list-men">
@@ -141,5 +160,9 @@
 </div>
 @endsection
 @section('scripts')
-
+    <script>
+        $(document).ready(function() {
+            $('.player-nav').affix({offset: {top:205}});
+        });
+    </script>
 @endsection

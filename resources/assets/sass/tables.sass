@@ -13,11 +13,15 @@ table
 		text-transform: uppercase
 	tbody
 .players-list
-	span.player-nav 
-		margin: 40px 0
+	.player-nav 
+		margin: 10px 0
 		a
 			text-transform: uppercase
-			margin: 20px 10px
+			margin: 20px 5px
+		a:active,a:focus,a:visited
+			text-decoration: underline
+		a:active
+			color: $gray-base
 	.players-list-men, .players-list-women
 		text-transform: capitalize
 		span

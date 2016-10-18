@@ -50,4 +50,8 @@ class HomeController extends Controller
     {
         return view('pages.single-player');
     }
+    public function media()
+    {
+        return view('pages.media');
+    }
 }

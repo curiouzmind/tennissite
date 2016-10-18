@@ -23,5 +23,6 @@ Route::get('/matches', 'HomeController@matches');
 Route::get('/single-match', 'HomeController@singleMatch');
 Route::get('/players', 'HomeController@players');
 Route::get('/single-player', 'HomeController@singlePlayer');
+Route::get('/media', 'HomeController@media');
 Route::get('/login', 'HomeController@login');
 Route::get('/register', 'HomeController@register');
