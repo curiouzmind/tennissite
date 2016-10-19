@@ -13,7 +13,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<div class="breadcrumb text-capitalize">
-			<a href="#"><i class="fa fa-home"></i></a>&nbsp; > &nbsp;<span>media</span>
+			<a href="#"><i class="fa fa-home"></i></a>&nbsp; > &nbsp;<span>Media</span>
 		</div>
 	</div>
 </div>
@@ -335,7 +335,6 @@
             </div>
 		</div>
 		<div class="col-md-4 sidebar">
-            <div class="player1"></div>
 			<span class="placeholder">
 				sidebar
 			</span>
