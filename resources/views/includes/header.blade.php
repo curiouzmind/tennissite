@@ -34,7 +34,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matches <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Match <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Scores & Stats</a></li>
                         <li><a href="#">Draws</a></li>
