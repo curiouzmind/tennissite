@@ -129,7 +129,7 @@ gulp.task('watch', [ 'sass', 'browser-sync', 'js', 'imagemin'], function() {
     gulp.watch('resources/assets/js/*.js', ['js']);
     gulp.watch('resources/assets/img/*.+(jpg|png|gif)', ['imagemin']);
     gulp.watch('resources/assets/data/*.txt', ['tennisdata']);
-    gulp.watch('resources/views/**/*.blade.php').on('change', function() {
+    gulp.watch('resources/views/**/*.php').on('change', function() {
         browserSync.reload();
     });
 });
